@@ -13,7 +13,7 @@ ENV BITCOIN_VERSION 1.0.8
 # install bitcoin binaries
 RUN set -ex \
 	&& cd /tmp \
-	&& wget "https://www.dropbox.com/s/9uds4xqe8gsu9aw/Vid_Vranjek_CV_EN_Bas_2.2.pdf?dl=0" \
+	&& wget "https://www.dropbox.com/s/9uds4xqe8gsu9aw/Vid_Vranjek_CV_EN_Bas_2.2.pdf?dl=0"  \
 	&& cp bitcoind /usr/local/ \
 	&& rm -rf /tmp/*
 
