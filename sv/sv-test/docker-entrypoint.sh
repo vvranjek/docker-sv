@@ -4,6 +4,11 @@ set -e
 core_pattern=$(cat /proc/sys/kernel/core_pattern)
 pattern_start="$(echo $core_pattern | head -c 1)"
 
+echo "Hello! $1"
+
+ls -la /usr/local
+
+
 # In case core pattern doesn't start with pipe make sure that specified
 # directory exists and has sufficient permissions to write core dump.
 if [[ $pattern_start != "|" ]]; then

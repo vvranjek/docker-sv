@@ -14,9 +14,9 @@ ENV BITCOIN_VERSION 1.0.8
 RUN set -ex \
 	&& cd /tmp \
 	&& wget "https://www.dropbox.com/s/qxk10xf55zmb39g/bitcoind"  \
-	&& pwd \
+	&& chmod +x bitcoind \
 	&& ls -a \
-	&& cp bitcoind /usr/local/ \
+	&& cp bitcoind /usr/local/bin/ \
 	&& rm -rf /tmp/*
 
 #tar -xzvf bitcoin.tar.gz -C /usr/local --strip-components=1 --exclude=*-qt \
