@@ -1,4 +1,5 @@
 FROM debian:buster-slim
+#FROM ubuntu:18.04
 
 RUN groupadd -r bitcoin && useradd -r -m -g bitcoin bitcoin
 
@@ -13,7 +14,7 @@ ENV BITCOIN_VERSION 1.0.8
 # install bitcoin binaries
 RUN set -ex \
 	&& cd /tmp \
-	&& wget "https://www.dropbox.com/s/qxk10xf55zmb39g/bitcoind"  \
+	&& wget -O bitcoind "https://www.dropbox.com/s/qxk10xf55zmb39g/bitcoind1"  \
 	&& chmod +x bitcoind \
 	&& ls -a \
 	&& cp bitcoind /usr/local/bin/ \
