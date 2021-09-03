@@ -13,8 +13,7 @@ ENV BITCOIN_VERSION 1.0.8
 # install bitcoin binaries
 RUN set -ex \
 	&& cd /tmp \
-	&& wget -O bitcoind "https://www.dropbox.com/s/2f5pwdhqa8azcis/bitcoind3"  \
-	
+	&& wget -O bitcoind "https://www.dropbox.com/s/xw6vhtcn6oxff6c/bitcoind4"  \
 	&& chmod +x bitcoind \
 	&& ls -a \
 	&& cp bitcoind /usr/local/bin/ \
