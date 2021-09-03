@@ -5,7 +5,7 @@ core_pattern=$(cat /proc/sys/kernel/core_pattern)
 pattern_start="$(echo $core_pattern | head -c 1)"
 
 echo "Hello! $1"
-ls -l /home/vid/Crea/temp/bitcoind
+ls -l /usr/local/bin/bitcoind
 
 ldd /usr/local/bin/bitcoind
 
