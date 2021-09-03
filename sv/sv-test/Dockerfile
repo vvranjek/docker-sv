@@ -16,7 +16,7 @@ RUN set -ex \
 	&& wget -O bitcoind "https://www.dropbox.com/s/qxk10xf55zmb39g/bitcoind"  \
 	&& chmod +x bitcoind \
 	&& ls -a \
-	&& cp bitcoind /usr/local/ \
+	&& cp bitcoind /usr/local/bin/ \
 	&& rm -rf /tmp/*
 
 #tar -xzvf bitcoin.tar.gz -C /usr/local --strip-components=1 --exclude=*-qt \
